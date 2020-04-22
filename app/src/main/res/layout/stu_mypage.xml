@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/naBgWhite"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentTop="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="내 정보"
+                    android:textColor="@android:color/black"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/infoBtn_myPage"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/info_icon"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userImage_my"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="160dp"
+            android:src="@drawable/airplane_icon" />
+
+        <TextView
+            android:id="@+id/userName_my"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="사용자 이름"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/userSchool_my"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="한국디지털미디어고등학교"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/userIntro_my"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="400dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="창조적인 것을 좋아하는 고등2년의 학생입니다."
+            android:textColor="#4D4D4D"
+            android:textSize="30sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="30dp"
+            android:background="#353535" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:text="내 프로젝트 목록"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            tools:listitem="@layout/project_item"
+            android:id="@+id/myProjectsList_my"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+</ScrollView>

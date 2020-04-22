@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"></androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="70dp"
+        android:text="당신을 소개해주세요!"
+        android:textColor="@color/naGreen"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/openStudentTab"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_skin2"
+            android:text="학생"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/openTeacherTab"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="70dp"
+            android:background="@drawable/button_skin2"
+            android:text="선생님"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/openMentorTab"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_skin2"
+            android:text="멘토"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/mainFrame"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"></FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button_register"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_skin"
+            android:text="sign up"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7E7E7"
+    android:orientation="horizontal"
+    android:weightSum="10"
+    tools:context=".BrainStorming">
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:layout_weight="6"
+        android:background="@drawable/rounded_bg">
+
+        <TextView
+            android:id="@+id/keywordView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="이곳에 키워드들을 입력해주세요.(모두 한글로만)"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/addBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+
+                android:text="add" />
+
+            <Button
+                android:id="@+id/getBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@id/deleteBtn"
+                android:text="get" />
+
+            <Button
+
+                android:id="@+id/deleteBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@id/addBtn"
+                android:text="delete" />
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:id="@+id/cloudImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_weight="4"
+        android:background="@drawable/rounded_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/toolbar_brainStorming"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginTop="0dp"
+            android:background="#fff"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            tools:elevation="10dp">
+
+            <ImageView
+                android:id="@+id/infoBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/info_icon" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/chatRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="9">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <LinearLayout
+                android:id="@+id/inputBar"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:text="이곳에 입력"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/sendBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="전송" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

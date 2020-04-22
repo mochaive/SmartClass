@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editText_email"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittext_skin"
+        android:hint="Email"
+        android:padding="10dp"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editText_pw"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittext_skin"
+        android:hint="Password"
+        android:padding="10dp"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editText_name"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittext_skin"
+        android:hint="Name"
+        android:padding="10dp"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editText_area"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittext_skin"
+        android:hint="Area(지역)"
+        android:padding="10dp"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editText_school"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittext_skin"
+        android:hint="School(00학교)"
+        android:padding="10dp"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editText_subject"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittext_skin"
+        android:hint="Subject(담당과목)"
+        android:padding="10dp"
+        android:textAlignment="center" />
+</LinearLayout>
